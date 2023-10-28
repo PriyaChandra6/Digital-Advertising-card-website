@@ -1,0 +1,113 @@
+<!--CREATING CARDS WEBSITE PROJECT 3 USING CSS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <style>
+     *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+     }
+     .container{
+        width:100vw;
+        height: 100vh;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+     }
+     .box{
+        width: 900px;   /*900px*/
+        height: 450px;   /*450px*/
+        background-color: blueviolet;  
+        display: flex;
+       position: relative;
+        
+        /*flex-direction: row;
+        justify-content: space-between;*/
+        box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+     }
+    
+
+    
+    img{
+        width:450px;   /*450px both*/
+        height:450px;
+        position: fixed;
+     }
+     .leftbox{
+       padding: 70px;
+       height: 450px;
+        width: 450px;   /*450px*/
+       /*float: left;*/
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+        gap: 35px;
+
+     }
+     h1{
+        color: azure;
+        font-size: 35px;
+        font-style: bold;
+     }
+     #about{
+        color: azure;
+        font-size: 15px;
+     }
+     .detail{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       /* gap: 30px;*/
+        color: azure;
+     }
+     #num{
+        font-size: 35px;
+        font-style: bold;
+        
+     }
+    
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="textbox">
+                <div class="leftbox">
+                    <h1>Get insights that helps your business grow</h1>
+                  
+                    <div id="descbox">
+                        <p id="about"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque fuga reiciendis aut debitis quo nobis dolor officiis necessitatibus doloribus aperiam!</p>
+                    </div>
+                    
+                    <div class="detail">
+                        <div class="detail1">
+                            <p id="num">10K+</p>
+                            <p>comments</p>
+                        </div>
+                        <div class="detail2">
+                            <p id="num">214</p>
+                            <p>paid user</p>
+                        </div>
+                        <div class="detail3">
+                            <p id="num">12M+</p>
+                            <p>views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rightbox">
+                <img src="mg.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
